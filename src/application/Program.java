@@ -1,13 +1,14 @@
 package application;
 
-import javax.swing.text.Position;
+import chess.ChessMatch;
 
 public class Program {
 
 	public static void main(String[] args) {
-	boardgame.Position pos = new boardgame.Position(3, 5) ;
-		System.out.println(pos);
 	
+		ChessMatch chessMatch = new ChessMatch();
+		UI.printBoard(chessMatch.getPieces());
+		
 
 		
 	
